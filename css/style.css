@@ -207,11 +207,6 @@ button {
   cursor: pointer;
 }
 
-a:hover {
-  text-decoration: none;
-  color: var(--accent-color);
-}
-
 table {
   width: 100%;
   margin-bottom: 25px;
@@ -984,7 +979,7 @@ textarea {
     height: 69px;
   }
   .cs_height_lg_70 {
-    height: 70px;
+    height: 40px;
   }
   .cs_height_lg_71 {
     height: 71px;
@@ -1014,7 +1009,7 @@ textarea {
     height: 79px;
   }
   .cs_height_lg_80 {
-    height: 80px;
+    height: 40px;
   }
   .cs_height_lg_81 {
     height: 81px;
@@ -1465,7 +1460,7 @@ label {
   background-color: var(--blue-color);
 }
 .cs_btn.cs_style_1.cs_color_2 {
-  background-color: var(--blue-color);
+  background-color: #E6237C;
   color: #fff;
 }
 .cs_btn.cs_style_1.cs_color_2:hover {
@@ -2551,7 +2546,7 @@ label {
           align-items: flex-start;
   gap: 12px;
 }
-.cs_about_iconbox::before {
+/* .cs_about_iconbox::before {
   content: "";
   height: 1px;
   width: 47px;
@@ -2559,7 +2554,7 @@ label {
   position: absolute;
   top: -1px;
   left: 24%;
-}
+} */
 .cs_about_iconbox .cs_about_iconbox_icon {
   height: 30px;
   width: 30px;
@@ -4466,8 +4461,8 @@ label {
 }
 
 .cs_footer_highlight_col {
-  padding: 41px 35px;
-  /* margin-top: -26px; */
+  padding: 0 35px;
+  margin-top: -10px;
   border-radius: 5px 5px 0 0;
 }
 @media (max-width: 1199px) {
@@ -4592,7 +4587,7 @@ label {
 }
 @media (max-width: 767px) {
   .cs_footer_row {
-    gap: 50px 0px;
+    gap: 40px 0px;
     padding-bottom: 70px;
   }
 }
@@ -4859,7 +4854,7 @@ label {
 @media (max-width: 991px) {
   .cs_hero.cs_style_1 {
     height: initial;
-    padding: 80px 0 150px 0;
+    padding: 40px 0 40px 0;
   }
 }
 .cs_hero.cs_style_1 .cs_hero_title {
@@ -8703,7 +8698,7 @@ select {
         display: none;
       }
           .cs_hero.cs_style_1{
-            padding-bottom: 80px;
+            padding-bottom: 40px;
           }
 
           .cs_iconbox.cs_style_1 .cs_iconbox_subtitle{
@@ -8713,8 +8708,30 @@ select {
            .cs_footer_row .cs_footer_col.first-col{
             padding: 92px 0 0;
           }
+
+          .cs_card.cs_style_3 .cs_solution_thumbnail {
+                display: none;
+          }
+          .cs_footer_row .cs_footer_col.first-col {
+            padding:0;
+          }
+          .cs_footer_row .cs_footer_col.first-col {
+              padding:0;
+          }
+          .cs_footer_highlight_col{
+            padding: 40px 15px 0;
+          }
+            .cs_footer_row{
+            padding-bottom: 40px;
+          } 
+          .cs_footer_col{
+            padding-inline: 15px;
+          }
+   
+        }
+
+    @media (max-width: 991px) {
+    .cs_card.cs_style_2 {
+        padding: 10px 10px 0 10px;
     }
-
-
-
-    
+}
