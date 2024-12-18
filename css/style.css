@@ -8674,14 +8674,13 @@ select {
     resize: none;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
     .footer_btn{
       width: 100%;
       display: block;
       outline: none;
-      margin-top: 20px;
       border-radius: 5px !important;
       border: none;
       &:hover{
