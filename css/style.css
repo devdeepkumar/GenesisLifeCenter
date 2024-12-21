@@ -1858,6 +1858,7 @@ label {
   background-color: #f0f4f6;
   resize: none;
   -webkit-transition: all 0.4s ease;
+  color: gray;
   transition: all 0.4s ease;
 }
 .cs_form_field:focus {
@@ -4472,9 +4473,10 @@ label {
 }
 
 .cs_footer_logo {
+  margin-left: -10px;
   /* padding-bottom: 30px; */
-  margin-bottom: 25px;
-  border-bottom: 1px solid #fff;
+  /* margin-bottom: 25px;
+  border-bottom: 1px solid #fff; */
 }
 
 .cs_footer_contact li {
@@ -4531,12 +4533,14 @@ label {
         -ms-flex-pack: center;
             justify-content: center;
   }
+
+  
 }
 
 .cs_footer_widget_title {
   color: #fff;
   font-size: 22px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 @media (max-width: 767px) {
   .cs_footer_widget_title {
@@ -8422,7 +8426,7 @@ label {
             align-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center;
+        
   }
 }
 .cs_tab_links.cs_style_1 li::after {
@@ -8661,7 +8665,7 @@ select {
     }
 
    select:valid {
-        color: black; 
+        color: gray; 
     }
 
 .footer_form input{
@@ -8726,6 +8730,9 @@ select {
           .cs_footer_col{
             padding-inline: 15px;
           }
+          .newsletter-form .subscribe-btn{
+            padding: 0 10px;
+          }
    
         }
 
@@ -8733,4 +8740,72 @@ select {
     .cs_card.cs_style_2 {
         padding: 10px 10px 0 10px;
     }
+}
+
+
+
+/* custom css   */
+.hero-form h3 {
+  color: #1D90A5;
+  text-align: center;
+}
+.hero-form input {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    outline: none;
+    background-color: #f0f4f6;
+    resize: none;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    margin-bottom: 20px;
+}
+
+.hero-form button {
+    width: 100%;
+    display: block;
+    outline: none;
+    border-radius: 5px !important;
+    border: none;
+    display: inline-block;
+    flex: none;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 11px 28px;
+    line-height: 1.6em;
+    gap: 8px;
+    line-height: 1.6em;
+    border-radius: 1.6em;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: #E6237C;
+}
+
+.cs_counter_area  .cs_counter_icon.cs_center img{
+  width: 37px;
+}
+
+.cs_cta.cs_style_2.cs_blue_bg.cs_bg_filed.cs_center img{
+  position: relative;
+}
+
+.cs_cta.cs_style_2.cs_blue_bg.cs_bg_filed.cs_center::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color:red;
+    z-index: -1;
+}
+
+.cs_footer_col.first-col .cs_footer_highlight_col p{
+  margin-bottom: 0;
+}
+
+.footer_form{
+  margin-top: 49px;
 }
