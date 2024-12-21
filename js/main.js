@@ -410,7 +410,7 @@
        validatorResult.style.color = "red";
      } else {
        validatorResult.textContent =
-         "Thank  for your email! We will get in touch soon.";
+         "Thank you for your email! We will get in touch with you soon.";
        validatorResult.style.color = "white";
      }
    });
