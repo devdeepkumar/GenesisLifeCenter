@@ -1471,7 +1471,12 @@ label {
   color: var(--blue-color);
 }
 .cs_btn.cs_style_1.cs_color_3:hover {
-  background-color: var(--accent-color);
+  background-color: #E6237C;
+  color: #fff;
+}
+
+.cs_btn.cs_style_1.cs_color_1:hover{
+   background-color: #E6237C;
   color: #fff;
 }
 
@@ -8688,7 +8693,7 @@ select {
       border-radius: 5px !important;
       border: none;
       &:hover{
-        background: purple !important;
+        background: #E6237C !important;
       }
     }
 
