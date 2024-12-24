@@ -4293,7 +4293,7 @@ label {
     overflow: auto;
     min-height: 100vh;
     line-height: 1.6em;
-    padding-top: 150px;
+    padding-top: 90px;
     z-index: 100;
     -webkit-transition: all 0.4s ease;
     transition: all 0.4s ease;
@@ -4307,7 +4307,7 @@ label {
   }
   .cs_nav .cs_nav_list a {
     display: block;
-    padding: 12px 15px;
+    padding: 12px 28px;
     line-height: 16px;
   }
   .cs_nav .cs_nav_list > li > a {
@@ -4474,7 +4474,7 @@ label {
 }
 @media (max-width: 1199px) {
   .cs_footer_highlight_col {
-    padding: 50px 15px;
+    padding: 35px 15px 0 0;
   }
 }
 
@@ -4563,7 +4563,7 @@ label {
 }
 @media (max-width: 1199px) {
   .cs_footer_widget {
-    padding: 70px 0;
+    padding: 35px 0;
   }
 }
 @media (max-width: 767px) {
@@ -8703,53 +8703,7 @@ select {
 
   
 
-    @media (max-width:768px){
-     .cs_hero_text .cs_hero_shape{
-        display: none;
-      }
-          .cs_hero.cs_style_1{
-            padding-bottom: 40px;
-          }
-
-          .cs_iconbox.cs_style_1 .cs_iconbox_subtitle{
-            max-width: 100%;
-          }
-
-           .cs_footer_row .cs_footer_col.first-col{
-            padding: 92px 0 0;
-          }
-
-          .cs_card.cs_style_3 .cs_solution_thumbnail {
-                display: none;
-          }
-          .cs_footer_row .cs_footer_col.first-col {
-            padding:0;
-          }
-          .cs_footer_row .cs_footer_col.first-col {
-              padding:0;
-          }
-          .cs_footer_highlight_col{
-            padding: 40px 15px 0;
-          }
-            .cs_footer_row{
-            padding-bottom: 40px;
-          } 
-          .cs_footer_col{
-            padding-inline: 15px;
-          }
-          .newsletter-form .subscribe-btn{
-            padding: 0 10px;
-          }
-   
-        }
-
-    @media (max-width: 991px) {
-    .cs_card.cs_style_2 {
-        padding: 10px 10px 0 10px;
-    }
-}
-
-
+    
 
 /* custom css   */
 .hero-form h3 {
@@ -8815,8 +8769,63 @@ select {
 }
 
 .footer_form{
-  margin-top: 49px;
+  margin-top: 47px;
 }
+
+
+
+/* My responsive Style  */
+
+@media (max-width:768px){
+     .cs_hero_text .cs_hero_shape{
+        display: none;
+      }
+          .cs_hero.cs_style_1{
+            padding-bottom: 40px;
+          }
+
+          .cs_iconbox.cs_style_1 .cs_iconbox_subtitle{
+            max-width: 100%;
+          }
+
+           .cs_footer_row .cs_footer_col.first-col{
+            padding: 92px 0 0;
+          }
+
+          .cs_card.cs_style_3 .cs_solution_thumbnail {
+                display: none;
+          }
+          .cs_footer_row .cs_footer_col.first-col {
+            padding:0;
+          }
+          .cs_footer_row .cs_footer_col.first-col {
+              padding:0;
+          }
+          .cs_footer_highlight_col{
+            padding: 40px 15px 0;
+          }
+            .cs_footer_row{
+            padding-bottom: 40px;
+          } 
+          .cs_footer_col{
+            padding-inline: 15px;
+          }
+          .newsletter-form .subscribe-btn{
+            padding: 0 10px;
+          }
+          .footer_form{
+            margin-top: 32px;
+          }
+   
+        }
+
+    @media (max-width: 991px) {
+    .cs_card.cs_style_2 {
+        padding: 10px 10px 0 10px;
+    }
+}
+
+
 
 @media (min-width:991px){
   .cs_hero.cs_style_1 {
@@ -8842,3 +8851,22 @@ select {
 
 }
 
+@media (min-width:1200px) and (max-width:1400px) {
+  .cs_counter_1_wrap .cs_counter.cs_style_1 .cs_counter_title{
+    font-size: 17px;
+  }
+  .cs_counter_1_wrap .cs_counter.cs_style_1 .cs_counter_nmber{
+    font-size: 35px;
+  }
+
+  .cs_iconbox.cs_style_2 {
+    padding: 22px 19px;
+  }
+ .cs_iconbox.cs_style_2 .cs_iconbox_title{
+  font-size: 17px;
+ }
+ .cs_iconbox.cs_style_2 .cs_iconbox_subtitle{
+  font-size: 15px;
+ }
+
+}
