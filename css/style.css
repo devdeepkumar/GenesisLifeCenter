@@ -8772,7 +8772,9 @@ select {
   margin-top: 47px;
 }
 
-
+.cs_hero.cs_style_1.cs_center.cs_bg_filed .container.row{
+  justify-content: space-between;
+}
 
 /* My responsive Style  */
 
