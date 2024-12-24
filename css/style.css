@@ -5319,7 +5319,7 @@ label {
 .cs_iconbox.cs_style_2:hover .cs_iconbox_icon::after {
   background-color: var(--white);
 }
-.cs_iconbox.cs_style_2:hover .cs_iconbox_title a,
+.cs_iconbox.cs_style_2:hover .cs_iconbox_title,
 .cs_iconbox.cs_style_2:hover .cs_iconbox_subtitle {
   color: var(--white);
 }
