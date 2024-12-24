@@ -4478,12 +4478,7 @@ label {
   }
 }
 
-.cs_footer_logo {
-  margin-left: -10px;
-  /* padding-bottom: 30px; */
-  /* margin-bottom: 25px;
-  border-bottom: 1px solid #fff; */
-}
+
 
 .cs_footer_contact li {
   position: relative;
@@ -6771,8 +6766,9 @@ label {
 }
 @media (max-width: 380px) {
   .cs_cta.cs_style_2 {
-    min-height: 680px;
+    padding-block: 52px;
   }
+  
 }
 .cs_cta.cs_style_2 .cs_cta_btn_wrapper {
   display: -webkit-box;
@@ -8625,6 +8621,8 @@ label {
     padding: 0 25px;
     font-weight: 500;
 }
+
+
 .form-control {
     display: block;
     width: 100%;
@@ -8773,10 +8771,30 @@ select {
 }
 
 .cs_hero.cs_style_1.cs_center.cs_bg_filed .container.row{
+  padding-inline: 10px;
   justify-content: space-between;
 }
 
 /* My responsive Style  */
+@media (max-width:380px){
+  .cs_hero.cs_style_1 .cs_hero_info h3 {
+    font-size: 22px;
+  }
+  .newsletter-form .form-control{
+    padding: 0 12px;
+  }
+  .cs_tab_links.cs_style_1 li .cs_tab_link_icon{
+    width: auto;
+    padding-left: 10px;
+  }
+  .cs_counter_1_wrap .cs_counter.cs_style_1 .cs_counter_title {
+    font-size: 20px;
+  }
+  .cs_iconbox.cs_style_2{
+    padding: 35px;
+  }
+}
+
 
 @media (max-width:768px){
      .cs_hero_text .cs_hero_shape{
@@ -8804,14 +8822,12 @@ select {
               padding:0;
           }
           .cs_footer_highlight_col{
-            padding: 40px 15px 0;
+            padding: 40px 0 0;
           }
             .cs_footer_row{
             padding-bottom: 40px;
           } 
-          .cs_footer_col{
-            padding-inline: 15px;
-          }
+          
           .newsletter-form .subscribe-btn{
             padding: 0 10px;
           }
