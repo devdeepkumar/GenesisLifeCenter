@@ -60,7 +60,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         }
                         .thank-you-container h2 {
                             font-size: 24px;
-                            color: #4CAF50;
+                            color: #1D90A5;
                             margin-bottom: 20px;
                         }
                         .thank-you-container p {
@@ -81,12 +81,18 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             opacity: 0.8;
                         }
                     </style>
+                    <script>
+                        // Automatic redirection after 10 seconds if no button is clicked
+                        setTimeout(function() {
+                            window.location.href = 'index.html'; // Change to your desired redirect URL
+                        }, 5000);
                 </head>
                 <body>
                     <div class='thank-you-container'>
                         <h2>Thank You for Your Request!</h2>
                         <p>We will get back to you as soon as possible.</p>
-                        <button onclick='window.location.href=\"index.html\"'>Back to Home</button>
+                        <button onclick='window.location.href=\"index.html\"' disabled>Back to Home</button>
+                        <button onclick='window.location.href=\"exit.html\"'>Exit</button>
                     </div>
                 </body>
               </html>";
