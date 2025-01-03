@@ -82,17 +82,29 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                         }
                     </style>
                     <script>
-                        // Automatic redirection after 10 seconds if no button is clicked
+                        // Automatically close the window after 10 seconds
                         setTimeout(function() {
-                            window.location.href = 'index.html'; // Change to your desired redirect URL
-                        }, 5000);
+                            window.close(); // Close the window after 10 seconds
+                        }, 10000); // 10000ms = 10 seconds
+
+                        // Function to close window when Exit button is clicked
+                
+                        function closeWindow() {
+                            window.close();
+                        }
+
+                        // Function to go back to the previous page when Back button is clicked
+                        function goBack() {
+                            window.history.back();
+                        }
+                    </script>
                 </head>
                 <body>
                     <div class='thank-you-container'>
                         <h2>Thank You for Your Request!</h2>
                         <p>We will get back to you as soon as possible.</p>
-                        <button onclick='window.location.href=\"index.html\"' disabled>Back to Home</button>
-                        <button onclick='window.location.href=\"exit.html\"'>Exit</button>
+                        <button onclick='goBack()'>Back</button>
+                        <button onclick='closeWindow()'>Exit</button>
                     </div>
                 </body>
               </html>";
