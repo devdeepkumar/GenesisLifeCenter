@@ -55,7 +55,7 @@
               <ul class="cs_header_contact_list cs_mp_0">
                 <li>
                   <i class="fa-solid fa-envelope"></i>
-                  <a href="info@genesislifecenter.com"
+                  <a href="mailto:info@genesislifecenter.com"
                     >info@genesislifecenter.com</a
                   >
                 </li>
@@ -157,14 +157,15 @@
               </div>
               <div class="hero-form col-lg-4  mt-5 mt-lg-0">
                     <h3>Schedule Demo</h3>
-                    <form class="hero-form">
-                   <input type="text" placeholder="Your Name*" required="" tabindex="0">
-                   <input type="email" placeholder="Your Email*" required="" tabindex="0">
-                  <input type="text" placeholder="Your Phone*" required="" tabindex="0">
-                  <input type="text" placeholder="Your City*" required="" tabindex="0">
-                  <input type="text" placeholder="Your Country*" required="" tabindex="0">
-                 <button type="submit" tabindex="0">Schedule now</button>
-               </form>
+                   <form class="hero-form" method="post" action="./mailphp/mail.php">
+                      <input type="text" name="name" placeholder="Your Name*" required tabindex="0">
+                      <input type="email" name="email" placeholder="Your Email*" required tabindex="0">
+                      <input type="text" name="phone" placeholder="Your Phone*" required tabindex="0">
+                      <input type="text" name="city" placeholder="Your City*" required tabindex="0">
+                      <input type="text" name="country" placeholder="Your Country*" required tabindex="0">
+                      <button type="submit" tabindex="0">Schedule now</button>
+                    </form>
+
               </div>
             </div>
           </div>
@@ -1528,24 +1529,14 @@
             parenthood dreams? Share your email address with us, and we’ll get
             in touch with personalized information and support.
           </p>
-          <form class="newsletter-form" id="newsletterForm" novalidate="true">
-            <input
-              type="email"
-              class="form-control"
-              placeholder="Enter Your Email Address"
-              name="EMAIL"
-              required
-              autocomplete="off"
-            />
-            <button
-              class="subscribe-btn"
-              type="submit"
-              style="pointer-events: all; cursor: pointer"
-            >
-              Get in Touch
+          <form class="newsletter-form" id="newsletterForm" action="./mailphp/mail2.php" method="post" novalidate="true">
+            <input type="email" class="form-control" placeholder="Enter Your Email Address" name="EMAIL" required autocomplete="off">
+            <button class="subscribe-btn" type="submit" style="pointer-events: all; cursor: pointer;">
+                Get in Touch
             </button>
             <div id="validator-newsletter" class="form-result"></div>
-          </form>
+        </form>
+
         </div>
       </div>
     </section>
@@ -1806,66 +1797,36 @@
               </h2>
             </div>
             <div class="cs_height_25 cs_height_lg_25"></div>
-            <form class="cs_contact_form row cs_gap_y_30 home_form_area">
+            <form class="cs_contact_form row cs_gap_y_30 home_form_area" action="./mailphp/mail3.php" method="post">
               <div class="col-md-6">
-                <input
-                  type="text"
-                  name="name"
-                  class="cs_form_field"
-                  placeholder="Full Name*"
-                  required
-                />
+                  <input type="text" name="name" class="cs_form_field" placeholder="Full Name*" required />
               </div>
               <div class="col-md-6">
-                <input
-                  type="email"
-                  name="email"
-                  class="cs_form_field"
-                  placeholder="Email Address*"
-                  required
-                />
+                  <input type="email" name="email" class="cs_form_field" placeholder="Email Address*" required />
               </div>
               <div class="col-md-6">
-                <input
-                  type="text"
-                  name="subject"
-                  class="cs_form_field"
-                  placeholder="Phone Number*"
-                  required
-                />
+                  <input type="text" name="subject" class="cs_form_field" placeholder="Phone Number*" required />
               </div>
-              
               <div class="col-md-6">
-                <input
-                  type="text"
-                  name="phone"
-                  class="cs_form_field"
-                  placeholder="Preferred Date"
-                />
+                  <input type="text" name="phone" class="cs_form_field" placeholder="Preferred Date" />
               </div>
               <div class="col-lg-12">
-                <select name="" id="" class="cs_form_field">
-                  <option value="" class="" disabled selected>Service Type</option>
-                   <option value="" class=""> IVF Consultation</option>
-                    <option value="" class="">Fertility Testing</option>
-                     <option value="" class="">Embryo Freezing</option>
-                     <option value="" class="">Other</option>
-                </select>
+                  <select name="service" class="cs_form_field">
+                      <option value="" disabled selected>Service Type</option>
+                      <option value="IVF Consultation">IVF Consultation</option>
+                      <option value="Fertility Testing">Fertility Testing</option>
+                      <option value="Embryo Freezing">Embryo Freezing</option>
+                      <option value="Other">Other</option>
+                  </select>
               </div>
               <div class="col-lg-12">
-                <textarea
-                  rows="5"
-                  name="message"
-                  class="cs_form_field"
-                  placeholder="Share Your Concerns"
-                ></textarea>
+                  <textarea rows="5" name="message" class="cs_form_field" placeholder="Share Your Concerns"></textarea>
               </div>
               <div class="col-lg-12">
-                <button type="submit" class="cs_btn cs_style_1 cs_color_1">
-                  Request Appointment
-                </button>
+                  <button type="submit" class="cs_btn cs_style_1 cs_color_1">Request Appointment</button>
               </div>
-            </form>
+          </form>
+
           </div>
           <div class="col-lg-6">
             <div
@@ -2148,8 +2109,8 @@
                  Janakpuri, New Delhi.
                 </li>
                 <li>
-                  <i class="fa-solid fa-phone"></i>
-                  9267912801
+                 <a href="tel:+91 9267912801"> <i class="fa-solid fa-phone"></i>
+                  9267912801</a>
                 </li>
               </ul>
             </div>
@@ -2157,12 +2118,13 @@
           <div class="cs_footer_col">
             <div class="cs_footer_widget">
               <h2 class="cs_footer_widget_title">Book Appointment</h2>
-              <form class="footer_form">
-                <input type="text" placeholder="Your Name*" required>
-                <input type="email" placeholder="Your Email Address*" required>
-                <input type="text" placeholder="Your Phone Number*" required>
+              <form class="footer_form" action="./mailphp/mail4.php" method="post">
+                <input type="text" name="name" placeholder="Your Name*" required="">
+                <input type="email" name="email" placeholder="Your Email Address*" required="">
+                <input type="text" name="phone" placeholder="Your Phone Number*" required="">
                 <button type="submit" class="cs_btn cs_style_1 cs_color_1 footer_btn" style="background-color: #0f454f;">Schedule Now</button>
-              </form>
+            </form>
+
             </div>
           </div>
           <!-- <div class="cs_footer_col">
